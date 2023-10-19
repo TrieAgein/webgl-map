@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import { Theme, Box } from '@radix-ui/themes';
 import { TopNav } from './topnav';
+import { Maps } from './map';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,6 +19,9 @@ export default function RootLayout({ children }) {
           <Box width={'100%'}  height={'100%'} className="Box">
             <TopNav />
             {children}
+          </Box>
+          <Box>
+            <Maps />
           </Box>
         </Theme>
       </body>

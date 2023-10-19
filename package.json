@@ -11,8 +11,11 @@
   "dependencies": {
     "@radix-ui/colors": "^3.0.0",
     "@radix-ui/themes": "^2.0.0",
+    "deck.gl": "^8.9.31",
+    "mapbox-gl": "^2.15.0",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-map-gl": "^7.1.6"
   }
 }
