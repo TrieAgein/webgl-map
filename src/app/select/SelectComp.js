@@ -1,9 +1,9 @@
 'use client'
 import { Select } from '@radix-ui/themes';
 
-export const SelectComp = ({options, title, defaultValue}) => {
+export const SelectComp = ({options, title, defaultValue, value, onChange}) => {
     return(
-        <Select.Root defaultValue={defaultValue}>
+        <Select.Root defaultValue={defaultValue}  value={value} onValueChange={onChange}>
             <Select.Trigger color="indigo" variant="soft" mr="2" />
             <Select.Content color="indigo">
                 <Select.Group>
