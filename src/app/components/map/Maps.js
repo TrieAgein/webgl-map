@@ -1,29 +1,32 @@
-"use client"
+"use client";
 
-import '@radix-ui/themes/styles.css';
-import Map from 'react-map-gl';
-import DeckGL from '@deck.gl/react';
-import { Flex, Button, Text, Box  } from '@radix-ui/themes';
-import { useState, useEffect } from 'react'
-import { TopNav } from '../topnav';
-import { getLocation } from '@/app/utilities/locations';
-import { getLayer } from '@/app/utilities/layers';
-import { datasetOptions } from '@/app/utilities/datasets';
-
+import "@radix-ui/themes/styles.css";
+import Map from "react-map-gl";
+import DeckGL from "@deck.gl/react";
+import { Flex, Button, Text, Box } from "@radix-ui/themes";
+import { useState, useEffect } from "react";
+import { TopNav } from "../topnav";
+import { getLocation } from "@/app/utilities/locations";
+import { getLayer } from "@/app/utilities/layers";
+import { datasetOptions } from "@/app/utilities/datasets";
 
 export const Maps = () => {
-  const [city, setCity] = useState('NYC');
-  const [dataset, setDataset] = useState('');
-  const [visualizationType, setVisualizationType] = useState('');
+  const [city, setCity] = useState("NYC");
+  const [dataset, setDataset] = useState("");
+  const [visualizationType, setVisualizationType] = useState("");
 
   const location = getLocation(city);
-  console.log('City:', city);
-  console.log('Dataset:', dataset);
-  console.log('Visualization Type:', visualizationType);
+  console.log("City:", city);
+  console.log("Dataset:", dataset);
+  console.log("Visualization Type:", visualizationType);
 
   return (
-    <Box width={'100%'} height={'100%'}>
-      <DeckGL initialViewState={location} controller={true} layers={getLayer(visualizationType, city, dataset)}>
+    <Box width={"100%"} height={"100%"}>
+      <DeckGL
+        initialViewState={location}
+        controller={true}
+        layers={getLayer(visualizationType, city, dataset)}
+      >
         <TopNav
           city={city}
           setCity={setCity}

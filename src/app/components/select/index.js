@@ -1,1 +1,1 @@
-export { SelectComp } from './SelectComp';
+export { SelectComp } from "./SelectComp";
