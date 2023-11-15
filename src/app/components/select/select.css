@@ -1,0 +1,20 @@
+@import "@radix-ui/colors/violet.css";
+@import "@radix-ui/colors/black-alpha.css";
+
+.SelectTrigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 13px;
+  line-height: 1;
+  height: 35px;
+  gap: 5px;
+  color: var(--violet-11);
+  box-shadow: 0 2px 10px var(--black-a7);
+}
+
+.SelectTrigger:hover {
+  background-color: var(--violet-9);
+}

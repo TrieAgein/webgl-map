@@ -1,1 +1,0 @@
-export { SelectComp } from './SelectComp';
