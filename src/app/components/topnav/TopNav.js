@@ -41,9 +41,9 @@ export const TopNav = ({
               onChange={setCity}
             />
             <SelectComp
-              options={['scatterplot', 'hexagon']}
+              options={['Scatterplot', 'Hexagon']}
               title="Visual"
-              defaultValue="scatterplot"
+              defaultValue="Scatterplot"
               value={visualizationType}
               onChange={setVisualizationType}
             />

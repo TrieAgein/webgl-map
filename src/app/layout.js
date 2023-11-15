@@ -1,7 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { Theme, Box } from '@radix-ui/themes';
-import { Maps } from './map';
+import { Maps } from './components/map';
 
 const inter = Inter({ subsets: ['latin'] })
 
