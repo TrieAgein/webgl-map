@@ -14,7 +14,6 @@ export const TopNav = ({
 }) => {
 
     useEffect(() => {
-        // Set the initial value for the dataset based on datasetOptions
         if (datasetOptions.length > 0) {
           setDataset(datasetOptions[0]);
         }
